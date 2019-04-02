@@ -6,9 +6,9 @@ const CustomerSchema = new Schema({
   displayName: {
     type: String,
     required: true
-  }
+  },
   firstName: {
-    type: String,
+    type: String
     // required: true
   },
   lastName: {
@@ -16,11 +16,15 @@ const CustomerSchema = new Schema({
     // required: true
   },
   avatar: {
-    type: String,
+    type: String
   },
   email: {
     type: String
     // required: true
+  },
+  password: {
+    type: String,
+    required: true
   },
   mobile: {
     type: String,
