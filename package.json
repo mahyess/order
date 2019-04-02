@@ -1,0 +1,35 @@
+{
+  "name": "order",
+  "version": "1.0.0",
+  "description": "Item orderer",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Mahesh",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~4.1.1",
+    "pug": "~2.0.3",
+    "morgan": "~1.9.1",
+    "nodemailer": "^5.1.1",
+    "serve-favicon": "~2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
