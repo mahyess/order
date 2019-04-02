@@ -7,6 +7,18 @@ const OperatorSchema = new Schema({
     type: String,
     required: true
   },
+  restaurant: {
+    type: Schema.Types.ObjectId,
+    ref: "restaurants"
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
   mobile: {
     type: String,
     required: true

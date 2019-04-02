@@ -15,6 +15,9 @@ const RestaurantSchema = new Schema({
     type: String,
     required: true
   },
+  rating: {
+    type: Number
+  },
   ratings: [
     {
       user: {
@@ -39,9 +42,6 @@ const RestaurantSchema = new Schema({
       date: {
         type: Date,
         default: Date.now
-      },
-      avatar: {
-        type: String
       }
     }
   ]

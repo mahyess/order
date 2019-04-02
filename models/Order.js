@@ -9,9 +9,9 @@ const OrderSchema = new Schema({
   }
   customers: [
     {
-      customer: {
+      user: {
         type: Schema.Types.ObjectId,
-        ref: "customers"
+        ref: "users"
       }
     }
   ],

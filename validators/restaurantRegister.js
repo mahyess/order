@@ -18,9 +18,9 @@ module.exports = function validateRegisterInput(data) {
     errors.address = "address Field is Required";
   }
 
-  if (getFullYear() <= parseInt(data.year) || parseInt(data.year) <= 2000) {
-    errors.year = "Release Year is Invalid";
-  }
+  // if (getFullYear() <= parseInt(data.year) || parseInt(data.year) <= 2000) {
+  //   errors.year = "Release Year is Invalid";
+  // }
 
   // if (Validator.isEmpty(data.year)){errors.year = 'Release Year Field is Required';}
 
