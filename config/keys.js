@@ -1,4 +1,4 @@
 module.exports = {
-	mongoURI: 'mongodb://admin:admin123@ds062178.mlab.com:62178/service-schedule',
-	secretKey: 'SecretKey',
-}
+  mongoURI: "mongodb://admin:admin123@ds229468.mlab.com:29468/restro_order",
+  secretKey: "SecretKey"
+};

@@ -3,6 +3,10 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const OperatorSchema = new Schema({
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: "users"
+  },
   restaurant: {
     type: Schema.Types.ObjectId,
     ref: "restaurants"

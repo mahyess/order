@@ -7,14 +7,22 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
-  amountInPaisa: {
-    type: Number,
-    required: true
-  },
   description: {
     type: String
     // required: true
-  }
+  },
+  amounts: [
+    {
+      restaurant: {
+        type: Schema.Types.ObjectId,
+        ref: "restaurants"
+      },
+      amountInPaisa: {
+        type: Number,
+        required: true
+      }
+    }
+  ]
 });
 
 module.exports = Item = mongoose.model("items", ItemSchema);
